@@ -2,12 +2,13 @@
 //  ScinarioLevel2.swift
 //  Outers_Game
 //
-//  Created by Aldanah Alqbbani on 28/07/1444 AH.
-//
 
-import Foundation
+
+
 import SwiftUI
 import RealityKit
+import ARKit
+import Vision
 
 struct FatherSenario : View {
     @State var TimerOn : Bool = false
@@ -25,12 +26,14 @@ struct FatherSenario : View {
     
     var body: some View{
         ZStack{
-            ARViewContainer7()
-                .ignoresSafeArea()
+//            ARViewContainer7()
+//                .ignoresSafeArea()
             if ispressed2{
-                
+//             CircularTimer()
                 StartTimer()
             }  else {
+                ARViewContainer7()
+                              .ignoresSafeArea()
                 ZStack{
                     Rectangle()
                         .frame(width: 280,height: 300)

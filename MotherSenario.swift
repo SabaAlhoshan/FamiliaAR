@@ -29,7 +29,7 @@ struct MotherSenario : View {
                 .ignoresSafeArea()
             if ispressed2{
                 
-                CircularTimer()
+               StartTimer()
             }  else {
                 ZStack{
                     Rectangle()
